@@ -16,6 +16,12 @@ npx hardhat ignition deploy ./ignition/modules/UniswapV2Router.js --network poly
 npx hardhat ignition deploy ./ignition/modules/UniswapV2Factory.js --network polygonAmoy
 ```
 
+currently deployed. 
+Polygonscan links
+* Factory: https://amoy.polygonscan.com/address/0x7560258AB2B96E46E8e5cB5d0E657f621f547868#code
+* Router: https://amoy.polygonscan.com/address/0x86aE117B73E4B197E26a3154C90F7131E3bee9B1#code
+
+
 To verify the contract on polygonscan
 ```shell
 npx hardhat verify --constructor-args <'ARGUMENT_FILE_FILENAME'> <'CONTRACT_ADDRESS'> --network polygonAmoy
