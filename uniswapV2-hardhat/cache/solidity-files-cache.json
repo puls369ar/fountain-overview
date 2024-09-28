@@ -1,0 +1,94 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/artajohan/Documents/uniswapv2-hardhat/contracts/UniswapV2Factory.sol": {
+      "lastModificationDate": 1727536140359,
+      "contentHash": "6d901d4c8f6f91e6985a6acc628c8be9",
+      "sourceName": "contracts/UniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IUniswapV2Callee",
+        "IUniswapV2ERC20",
+        "IUniswapV2Factory",
+        "IUniswapV2Pair",
+        "Math",
+        "SafeMath",
+        "UQ112x112",
+        "UniswapV2ERC20",
+        "UniswapV2Factory",
+        "UniswapV2Pair"
+      ]
+    },
+    "/Users/artajohan/Documents/uniswapv2-hardhat/contracts/UniswapV2Router.sol": {
+      "lastModificationDate": 1727538517573,
+      "contentHash": "e418f928b40aec8bd453f0fcc4be546f",
+      "sourceName": "contracts/UniswapV2Router.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IUniswapV2Factory",
+        "IUniswapV2Pair",
+        "IUniswapV2Router01",
+        "IUniswapV2Router02",
+        "IWETH",
+        "SafeMath",
+        "TransferHelper",
+        "UniswapV2Library",
+        "UniswapV2Router02"
+      ]
+    }
+  }
+}
