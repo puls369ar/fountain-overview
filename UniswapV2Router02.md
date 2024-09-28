@@ -2,6 +2,8 @@ FeeOnTransfer (`IUniswapV2Router02` expands `IUniswapV2Router01` by providing Fe
 
 withPermit - When removing liquidity we should sign on transactions to let the router to access our tokens and send it back to us, this problem isn’t actual when creating the liquidity, because we send the tokens ourselves to router
 
+# Liquidity
+
 `_addliquidity` function is wrapped by two liquidity creation functions
 * addLiquidity
 * addLiquidityETH
@@ -15,6 +17,7 @@ WhyETH?
 * removeLiquidityETHWithPermit
 * removeLiquidityETHWithPermitSupportingFeeOnTransferTokens
 
+# Swap
 
 To understand nine variations of swap functions inside `UniswapV2Router02` we separate three swappable entities
 * exactToken - Token,amount of which we provide
@@ -38,6 +41,8 @@ Now when we make all the possible combinations from this three and add FeeOnTran
 
 Note that we don’t have separate FeeOnTransfer supporting functions for the ones that provide”returning” token amount. That is because the the “investing” token amount in this case come with the fee already reduced from it. Unlike the functions where we provide “investing” token amount we also need to get
 fees separately depended on this amount that we are gonna send. By the way all functions are wrapped around internal `_swap` function, except the ones that are FeeOnTransfer support. Those use `_swapSupportingFeeOnTransferTokens` internal function
+
+# Library
 
 Inside these swap functions helper functions are used that are defined in same contract at the lowest section
 
