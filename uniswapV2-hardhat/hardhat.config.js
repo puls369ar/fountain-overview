@@ -45,17 +45,6 @@ module.exports = {
     
     apiKey:{
       polygonAmoy: polygonscan,
-    },
-    // customChains: [
-    //   {
-    //     network: "polygonAmmoy",
-    //     chainId: 80002,
-    //     urls: {
-    //       apiURL:
-    //         "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/AMOY_TESTNET",
-    //       browserURL: "https://www.oklink.com"
-    //     }
-    //   }
-    // ]
+    }
   }
 };
