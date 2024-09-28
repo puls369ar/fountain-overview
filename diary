@@ -1,3 +1,7 @@
+[27.09.2024][21:22]
+Often new contracts are created with this style `IUniswapV2Pair(pair).initialize(token0, token1);` reminds me of InstanceFactory OOP pattern.
+
+
 [28.09.2024][17:15]
 Finished learning `UniswapV2Factory` main functionality. New solidity
 style is involved, still other features to learn in the contract
@@ -12,7 +16,5 @@ So I divide learning into two levels of complexity, and study the context in a p
 It was a bad idea to explain learned functionality in the code
 witth comments. Better migrate them to the `.md` files and collect everything alltogether in git repo.
 
-[27.09.2024][21:22]
-Often new contracts are created with this style `IUniswapV2Pair(pair).initialize(token0, token1);` reminds me of InstanceFactory OOP pattern.
 
 
