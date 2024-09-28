@@ -5,6 +5,7 @@ withPermit - When removing liquidity we should sign on transactions to let the r
 `_addliquidity` function is wrapped by two liquidity creation functions
 * addLiquidity
 * addLiquidityETH
+
 Liquidity removal functions also have their variations where they implement withPermit and FeeOnTransfer functionality. The latest is a mandatory to manage fee-demanding tokens while those are being transferred back to the holder (when creating we pay it separately, not from the tokens provided for the liquidity)
 WhyETH?
 * removeLiquidity
