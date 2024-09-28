@@ -1,0 +1,18 @@
+[28.09.2024][17:15]
+Finished learning `UniswapV2Factory` main functionality. New solidity
+style is involved, still other features to learn in the contract
+
+[29.09.2024][19:30]
+I realized that I can’t learn common Uniswap functionality in 2 days if I try to interpret each function’s code line by line.
+So I divide learning into two levels of complexity, and study the context in a parallel way in order
+    L2: Descriptively understand what does the function for the system, what are the inputs and outputs (priority)
+    L1: Open the blackbox. Research how code(usually repetitive) works inside functions
+
+[29.09.2024][20:42]
+It was a bad idea to explain learned functionality in the code
+witth comments. Better migrate them to the `.md` files and collect everything alltogether in git repo.
+
+[27.09.2024][21:22]
+Often new contracts are created with this style `IUniswapV2Pair(pair).initialize(token0, token1);` reminds me of InstanceFactory OOP pattern.
+
+

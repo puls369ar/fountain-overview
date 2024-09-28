@@ -14,4 +14,7 @@
 * Calldata - Variables declared as `calldata` cannot be modified. This makes it a safe choice when you only need to read data without altering
 * Memory - the memory keyword is used to define a temporary location for data storage that is only valid for the lifetime of a function call. When you use memory, the data is not persisted after the function execution ends, which makes it ideal for temporary or intermediate computations 
 
+# Other
+* assembly - operator tells that the code in it's scope is a low-level EVM instruction
+
 external->public?
