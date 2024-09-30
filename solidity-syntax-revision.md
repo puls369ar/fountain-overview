@@ -16,5 +16,37 @@
 
 # Other
 * assembly - operator tells that the code in it's scope is a low-level EVM instruction
+* using - used in interaction with Library's name and extends the type or contract with the methods it contains
+
+## Features
+* modifier - Helps code reduction by giving a possibility to create repetitive instruction patterns and
+then apply them to the functions
+
+```solidity
+contract Ownable {
+    address public owner;
+
+    constructor() {
+        owner = msg.sender; // The deployer of the contract becomes the owner
+    }
+
+    // Define the modifier
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not the contract owner");
+        _; // Continue with the function execution
+    }
+
+    // Function restricted by the onlyOwner modifier
+    function changeOwner(address newOwner) public onlyOwner {
+        owner = newOwner;
+    }
+
+    // A normal function that anyone can call
+    function openFunction() public view returns (string memory) {
+        return "Anyone can call this";
+    }
+}
+
+```
 
 external->public?
