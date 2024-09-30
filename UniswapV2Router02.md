@@ -52,5 +52,19 @@ Inside these swap functions helper functions are used that are defined in same c
 * getAmountsOut: This function returns the amounts of tokens required for a multi-hop swap given an input amount and a path of token addresses. It takes the amount of input tokens and an array of token addresses as parameters. It returns an array of amounts corresponding to each token in the path.
 * getAmountsIn: Similar to getAmountsOut, this function provides the amounts of tokens needed for a multi-hop swap to achieve a specified output amount. It takes the output amount and an array of token addresses as input. It returns an array of amounts corresponding to each token in the path.
 
+# Interface Diagram
+UniswapV2Router->IUniswapV2Router02->IUniswapV2Router01
+
+Interfaces for instance creation and external contract instances interaction
+* IUniswapV2Factory
+* IERC20
+* IUniswapV2Pair
+
+Libraries
+* SafeMath
+* TransferHelper
+* UniswapV2Library
+  
+
 
 
