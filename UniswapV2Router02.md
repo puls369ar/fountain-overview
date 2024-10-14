@@ -1,5 +1,5 @@
 # Constructor
-
+It takes two parameters for arguments `_WETH` and `_factory`. We may deploy our Uniswap contract to the L2 sidechains, in that case the address of it's native wrapped token will be different. So we set this addressin UniswapV2Router's constructor
 
 # Liquidity
 
