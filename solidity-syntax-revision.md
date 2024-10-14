@@ -49,4 +49,20 @@ contract Ownable {
 
 ```
 
+
+# OpenZeppelin
+When the contract inherits from
+```solidity
+import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
+```
+it acquires the mechanism of contract's role management. Below is the example of giving super admin status to the contract deployer
+```solidity
+constructor() {
+    _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
+}
+```
+
+`_setUpRole()` and `DEFAULT_ADMIN_ROLE` are implemented assets inherited from `AccessControl` by our contract
+
+
 external->public?
