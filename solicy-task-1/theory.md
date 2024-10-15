@@ -161,3 +161,5 @@ rewardToken (instance of IERC20)
 * In IUniswapV2Factory there are `<LIF3> additions` section. What is the relation between these two
 * Term `Treasury` used so much in the contents is the same `ModerTreasury` dApp?
 * I dont get the math behind. How this logic is called, I want to research better ![image](https://github.com/puls369ar/soliciy-tasks/blob/main/solicy-task-1/image.png)
+* In Fountain contract I see there is a separate interface `IModernTreasury` deployed, but with no use. Also it doesn't seem to be implemented by original `ModernTreasury` neither it matches the functionality
+* `currentEpoch()` and `nextEpochPoint()` functions described in Fountain's `IModernTreasury` remind me of the logic I didn't understand in the diagramm. I urgently need to understand 3th question's problem
