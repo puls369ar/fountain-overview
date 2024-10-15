@@ -48,6 +48,25 @@ contract Ownable {
 }
 
 ```
+## Contract Instance
+To create instances from the exisitng contract address to interact with them
+```solidity
+MyContract(contract);       // Casting address -> MyContract to contract itself
+IMyContract(contract);      // Casting address -> IMyContract to the interface that the contract implemented
+```
+
+Second method is much better as we need only functionality metadata for our interaction and no need to create an instance with the whole implementation
+itself. Also this gives more flexibility, if we have another contract differenlty imlementing the same functionality casting to the same interface will work.
+_**Remember**_ If the contract implements two or more interfaces then creating an instance by casting into the one of the interfaces will result in reduced functionality 
+of an instance and you won't be available to use the implemented functionality of other interfaces
+First method is ok only when we have to prevent the case described above, if we don't want to have separate interface for contracts functionality, because of complexity of the code or other reasons.
+
+## Special
+* `receive()` - Function that's triggered when ETH is transferred directly using transfer() or send() functions. Or when ETH is received without any data in transaction
+* `msg.sender` - The address in this function's scope that uses function to send ETH to contract
+
+
+external->public?
 
 
 # OpenZeppelin
