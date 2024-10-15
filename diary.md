@@ -32,7 +32,10 @@ assets.
 
 ## [15.10.2024]
 * [10:30] - Back to work. Now Learning `Fountain` contract's code and lif3 ecosystem
-* [12:15] - Finished learning **ShareWrapper** core contract and **AccessControl**, **ReentrancyGuard** mechanisms everything that is inherited by **Fountain**. Now proceeding to Fountain itself.
+* [13:00] - Finished learning **ShareWrapper** core contract and **AccessControl**, **ReentrancyGuard** mechanisms everything that is inherited by **Fountain**. Now proceeding to Fountain itself
+* [16:00] - Has done half of learning `Fountain` and got a new info about main task. It turns out when we fork `UniswapV2Pair` contract where the swappable oracle is (LIF3(POL),LSHARE(POL)) and deploy it into **lif3** ecosystem where
+  **LIF3 coin** is native, it is forbidden or error prone there to have (__LIF3(LIF3)__, LSHARE(LIF3)). I now start to research `Oracle` contract in ModernTreasury
+* [19:00] - Today I saw Oracle concept is present in ModernTreasury contract, but needed to finish Fountain contract learning to make everything clear. I finished learning code structure of Fountain contract, check the docs. Will proceed to ModernTreasury tomorrow and after will clarify the logics of both and beautify the contents
 
 
 
