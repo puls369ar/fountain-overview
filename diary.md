@@ -31,7 +31,8 @@ that sees only post-macro version of imported
 assets.
 
 ## [15.10.2024]
-Back to work. Now Learning `Fountain` contract's code and lif3 ecosystem
+* [10:30] - Back to work. Now Learning `Fountain` contract's code and lif3 ecosystem
+* [12:15] - Finished learning **ShareWrapper** core contract and **AccessControl**, **ReentrancyGuard** mechanisms everything that is inherited by **Fountain**. Now proceeding to Fountain itself.
 
 
 
