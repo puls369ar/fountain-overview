@@ -317,5 +317,5 @@ is manually overwritten in `claimReward()` proccess to make sure that this value
 * `SafeERC20` – Library that usually extends ERC20 functionality by `using SafeERC20 for IERC20;`
 * `Context` - abstract contract provided by OpenZeppelin, which serves as a base contract for other contracts in the OpenZeppelin library.
 It provides information about the current execution context, including the address of the sender (`_msgSender()`)
-* `IModernTreasury` - provides an interface with reduced functionality (just `currentEpoch` and `nextEpochPoint` functions) for instance creation
+* `IModernTreasury` - provides an interface with reduced functionality (just `currentEpoch` and `nextEpochPoint` functions) to create `treasury` instance variable inside `Fountain` and work with epochs through that variable
 * Operator – ./owner/Operator.sol
