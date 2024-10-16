@@ -20,6 +20,10 @@ Coins
 * LIF3
 * LSHARE
 
+Chains Settings
+https://chainlist.org/?chain=80002&search=Lif3&testnets=true
+
+
 ## Fantom
 * _Consensus_: Lachesis (ABFT)
 * _TPS_: 2000
