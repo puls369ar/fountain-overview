@@ -1,8 +1,5 @@
-# Fountain Contract
-[contract](https://polygonscan.com/address/0x35d730cd8c9984916A7E0AC11eAc4Fcff17fD6c5#code)
+# Fountain [Contract](https://polygonscan.com/address/0x35d730cd8c9984916A7E0AC11eAc4Fcff17fD6c5#code)
 
-## Interface Diagram
-Fountain->(ShareWrapper,ReentrancyGuard,AccessControl->IAccessControl)
 
 ## All Contracts, Libs and Interfaces
 ### ShareWrapper
@@ -232,7 +229,7 @@ Allows the admin to adjust lockup periods for withdrawing staked tokens and clai
 
 
 
-* `allocateRewards()` - Called by the Treasury to distribute rewards. It updates the reward per share and records the allocation in a new MasonrySnapshot. This function is protected against reentrancy attacks
+* `allocateRewards()` - Called inside `ModernTreasury` contract's `allocateRewards()` function to distribute rewards. It updates the reward per share and records the allocation in a new MasonrySnapshot. This function is protected against reentrancy attacks
 * `eaned()`
 ```solidity
 function earned(address mason) public view returns (uint256) {
@@ -319,3 +316,7 @@ is manually overwritten in `claimReward()` proccess to make sure that this value
 It provides information about the current execution context, including the address of the sender (`_msgSender()`)
 * `IModernTreasury` - provides an interface with reduced functionality (just `currentEpoch` and `nextEpochPoint` functions) to create `treasury` instance variable inside `Fountain` and work with epochs through that variable
 * Operator – ./owner/Operator.sol
+
+## Interface Diagram
+Fountain->(ShareWrapper,ReentrancyGuard,AccessControl->IAccessControl)
+
