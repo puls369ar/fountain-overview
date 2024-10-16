@@ -38,7 +38,8 @@ assets.
 * [19:00] - Today I saw Oracle concept is present in ModernTreasury contract, but needed to finish Fountain contract learning to make everything clear. I finished learning code structure of Fountain contract, check the docs. Will proceed to ModernTreasury tomorrow and after will clarify the logics of both and beautify the contents
 
 ## [16.10.2024]
-* [18:20] - Finished `ModernTreasury` code revision and docs creation. Generalized some concepts and started creating my own local version of the contracts to deploy and write tests on it to understand it better. Will continue to review newly found `Oracle` contract tomorrow. 
+* [18:20] - Finished `ModernTreasury` code revision and docs creation. Generalized some concepts and started creating my own local version of the contracts to deploy and write tests on it to understand it better. Will continue to review newly found `Oracle` contract tomorrow.
+* [18:50] - The whole structure and the code is in a mess, I'll fix it 
 
 
 
