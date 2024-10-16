@@ -10,6 +10,7 @@ It is a complex DeFi ecosystem providing many tools. It is interoperable between
 * Fantom
 * Polygon
 * Tomb
+All the above listed chains are EVM compatible
 
 Ecosystem
 * L3 Wallet
@@ -22,6 +23,7 @@ Coins
 
 Chains Settings
 https://chainlist.org/?chain=80002&search=Lif3&testnets=true
+lif3 is closed for dApps so only specific wallets can deploy into the chain
 
 
 ## Fantom
