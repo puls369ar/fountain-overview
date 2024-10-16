@@ -46,9 +46,8 @@ contract Ownable {
         return "Anyone can call this";
     }
 }
-
 ```
-## Contract Instance
+* Contract Instance
 To create instances from the exisitng contract address to interact with them
 ```solidity
 MyContract(contract);       // Casting address -> MyContract to contract itself
@@ -60,6 +59,11 @@ itself. Also this gives more flexibility, if we have another contract differenlt
 _**Remember**_ If the contract implements two or more interfaces then creating an instance by casting into the one of the interfaces will result in reduced functionality 
 of an instance and you won't be available to use the implemented functionality of other interfaces
 First method is ok only when we have to prevent the case described above, if we don't want to have separate interface for contracts functionality, because of complexity of the code or other reasons.
+
+
+* All the uninitialized variables of the contract are set to their default values by default
+
+
 
 ## Special
 * `receive()` - Function that's triggered when ETH is transferred directly using transfer() or send() functions. Or when ETH is received without any data in transaction
