@@ -9,4 +9,6 @@ In this folder are all the theoretical resources related to the 1st Solicy task,
 * *Moderntreasury.sol* is a single contract `ModernTreasury` file, good. But in *ModernMasonry* there are plenty of contracts that could be deployed separately and then imported like others are done at the same place. I guess that's also the reason why the contract itself
 isn't called `ModernMasonry`, but `Fountain`
 * Nor `ModernTreasury` implements `IModernTreasury` from **ModernMasonry** neither `Fountain` implements `IModernMasonry` from **ModernTreasury**․ how these instances are created in that case?
-*  
+* I see in our contracts we use **solidity 0.8.9** that are supported laslty by `@openzeppelin/contracts@4.9.3` version while contracts we import (AccessControl, Reentrancyguard, etc.) have versions **solidity 0.8.20** as they are imported through `@openzeppelin/contracts@v5.0.2` some names are changed too and some incompatibilities exist. I rather use the original latest versions from **openzeppelin** and update our code so it works with them, then duplicate old versions locally or install older version of **openzeppelin**
+* `Operator.sol` was introduced in both **ModernMasonry** and **ModernTreasury**, but wasn't used so I just deleted it for now
+* `@openzeppelin/contracts@5.0.2` no longer has **SafeMath**, strange. I'll import it from `@uniswap/v2-periphery` instead
