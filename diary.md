@@ -1,20 +1,19 @@
-## [27.09.2024][21:22]
-Often new contracts are created with this style `IUniswapV2Pair(pair).initialize(token0, token1);` reminds me of InstanceFactory OOP pattern.
+## [27.09.2024]
+* [21:22] - Often new contracts are created with this style `IUniswapV2Pair(pair).initialize(token0, token1);` reminds me of InstanceFactory OOP pattern.
 
 
-## [28.09.2024][17:15]
-Finished learning `UniswapV2Factory` main functionality. New solidity
+## [28.09.2024]
+* [17:15] - Finished learning `UniswapV2Factory` main functionality. New solidity
 style is involved, still other features to learn in the contract
 
-## [29.09.2024][19:30]
-I realized that I can’t learn common Uniswap functionality in 2 days if I try to interpret each function’s code line by line.
+## [29.09.2024]
+* [19:30] - I realized that I can’t learn common Uniswap functionality in 2 days if I try to interpret each function’s code line by line.
 So I divide learning into two levels of complexity, and study the context in a parallel way in order
     L2: Descriptively understand what does the function for the system, what are the inputs and outputs (priority)
     L1: Open the blackbox. Research how code(usually repetitive) works inside functions
 
-## [20:42]
-It was a bad idea to explain learned functionality in the code
-witth comments. Better migrate them to the `.md` files and collect everything alltogether in git repo.
+* [20:42] - It was a bad idea to explain learned functionality in the code
+  with comments. Better migrate them to the `.md` files and collect everything alltogether in git repo.
 
 ## [29.09.2024][23:32]
 Finished high L2 level research of UniswapV2Router02
@@ -45,7 +44,10 @@ assets.
 * [11:50] - Got Fountain ecosystem compiled locally!!! changed the version to 0.8.20 and achieved code compatibility
 * [16:01] - Got clear compilation with versions for `ModernMasonry` and `ModernTreasury`, but I struggle to get clean results for `Oracle` and it's parent `Epoch`. Some issues with math functions and constructor
   Will give a little pause and continue to clarify the logics of **Fountain**
-* [19:02] - Finished Oracle code review and working principle
+* [19:02] - Finished Oracle code review and working principle research
 
+## [18.10.2024]
+* [14:16] - The decision was made about modifying `BitMath` to work under newer version of solidity that Fountain works with.
+  I found [DiffCheck](https://www.diffchecker.com/), great tool to not only observe differences between two files, but also to export it in PDF format. Later I'll collect the differences of original and forked versions of popular smart contracts used in our projects and   keep this PDFs in corresponding folders
 
 
