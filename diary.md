@@ -39,7 +39,13 @@ assets.
 
 ## [16.10.2024]
 * [18:20] - Finished `ModernTreasury` code revision and docs creation. Generalized some concepts and started creating my own local version of contracts to create better unmessed version of it and write tests on it to understand it better. Will continue to review newly found `Oracle` contract tomorrow.
-* [18:50] - The whole structure and the code is in a mess, I'll fix it 
+* [18:50] - The whole structure and the code is in a mess, I'll fix it
+
+## [17.10.2024]
+* [11:50] - Got Fountain ecosystem compiled locally!!! changed the version to 0.8.20 and achieved code compatibility
+* [16:01] - Got clear compilation with versions for `ModernMasonry` and `ModernTreasury`, but I struggle to get clean results for `Oracle` and it's parent `Epoch`. Some issues with math functions and constructor
+  Will give a little pause and continue to clarify the logics of **Fountain**
+* [19:02] - Finished Oracle code review and working principle
 
 
 
