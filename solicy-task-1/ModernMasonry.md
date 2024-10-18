@@ -1,4 +1,4 @@
-# Fountain [Contract](https://polygonscan.com/address/0x35d730cd8c9984916A7E0AC11eAc4Fcff17fD6c5#code)
+# ModernMasonry [Contract](https://polygonscan.com/address/0x35d730cd8c9984916A7E0AC11eAc4Fcff17fD6c5#code)
 
 The Fountain contract you're analyzing has several core functionalities centered around staking, rewards, governance, and access control. 
 It is inherited from and has the functionality of three Contracts we've already discussed
