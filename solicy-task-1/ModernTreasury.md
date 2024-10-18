@@ -1,5 +1,14 @@
 # ModerTreasury [Contract](https://polygonscan.com/address/0x6C076144FDa25498e3cD11cd8525328DC72F97ba#code)
 
+# Roles
+`RECOVERER_ROLE` - Recoverer Role
+`REWARD_TOKEN_ADMIN_ROLE` - Reward Token Admin Role
+`ORACLE_ADMIN_ROLE` - Oracle Admin Role
+`PAUSER_ROLE` - Pauser Role
+`DAO_FUND_ADMIN_ROLE` - DAO Fund Admin Role
+`DEV_FUND_ADMIN_ROLE` - DEV Fund Admin Role
+`REWARD_ADMIN_ROLE` - Reward Admin Role
+
 # Variables
 Epoch Management
 * `epochLength` - The length of time for each epoch (e.g., reward distribution cycle).
