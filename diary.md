@@ -49,5 +49,5 @@ assets.
 ## [18.10.2024]
 * [14:16] - The decision was made about modifying `BitMath` to work under newer version of solidity that Fountain works with.
   I found [DiffCheck](https://www.diffchecker.com/), great tool to not only observe differences between two files, but also to export it in PDF format. Later I'll collect the differences of original and forked versions of popular smart contracts used in our projects and   keep this PDFs in corresponding folders
-
+* [17:00] - Got the project compiled!!! 
 
