@@ -1,5 +1,5 @@
 # ModerTreasury [Contract](https://polygonscan.com/address/0x6C076144FDa25498e3cD11cd8525328DC72F97ba#code)
-
+It is the contract where *RewardsToken* is sent by an undefined outsider smart contract and then sent to *Masonry Contract* it's distribution among users is managed, based on the amount of share tokens staked.
 # Roles
 `RECOVERER_ROLE` - Recoverer Role
 `REWARD_TOKEN_ADMIN_ROLE` - Reward Token Admin Role
@@ -13,7 +13,7 @@
 Epoch Management
 * `epochLength` - The length of time for each epoch (e.g., reward distribution cycle).
 * `firstEpochStartTime` - The time when the first epoch begins.
-* `currentEpoch` - Keeps track of the current epoch. It is incremented everytime someone allocates the reward inside the `checkEpoch` modifier used by `allocateRewards()` 
+* `currentEpoch` - Keeps track of the current epoch. It is incremented every time `allocateRewards()` is called inside the triggered `checkEpoch()` modifier
 
 Token Ratios
 * `uint256 public expectedRatioOne`, `uint256 public expectedRatioTwo` - Target price ratios for the token pairs that must be met for rewards to be distributed.
@@ -34,8 +34,8 @@ Masonry
 * `uint32 public secondsAgoTwap = 60 * 7` - holds a value representing how far back in time the Time-Weighted Average Price (TWAP) should be calculated. However, in the provided contract code, secondsAgoTwap is declared but not used anywhere
 
 # Modifiers
-* `checkEpoch` - Ensures that an epoch is completed before proceeding with specific actions like distributing rewards `block.timestamp >= nextEpochPoint(); currentEpoch = currentEpoch + 1;`
-* `checkIfStarted` - Ensures that the treasury has started before allowing certain functions to run `block.timestamp >= firstEpochStartTime`
+* `checkEpoch` - Ensures that `allocateRewards()` isn't called more then once during the epoch
+* `checkIfStarted` - Ensures that the treasury has started
 
 # Functions
 * `constructor` - first of all the highest role is given to the sender and then some values are given by the sender
