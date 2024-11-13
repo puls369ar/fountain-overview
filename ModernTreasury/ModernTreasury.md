@@ -1,5 +1,9 @@
 # ModerTreasury [Contract](https://polygonscan.com/address/0x6C076144FDa25498e3cD11cd8525328DC72F97ba#code)
-It is the contract where *RewardsToken* is sent by an undefined outsider smart contract and then sent to *Masonry Contract* it's distribution among users is managed, based on the amount of share tokens staked.
+It is the contract where *RewardsToken* is sent by an undefined outsider smart contract and then sent to *Masonry Contract*, it's distribution among users is managed, based on the number of share tokens staked.
+```
+NOTE: Masonry contract may not have two share tokens to stake, but only one. In that case, we just initialize the second token with the first token's values, because in `Treasury` contract we need this data just for the RewardToken/StakeToken price threshold check
+```
+
 # Roles
 `RECOVERER_ROLE` - Recoverer Role
 `REWARD_TOKEN_ADMIN_ROLE` - Reward Token Admin Role
@@ -11,9 +15,9 @@ It is the contract where *RewardsToken* is sent by an undefined outsider smart c
 
 # Variables
 Epoch Management
-* `epochLength` - The length of time for each epoch (e.g., reward distribution cycle).
+* `epochLength` - The length of time for each epoch, it is initialized one for `Treasury` and is hardcoded.
 * `firstEpochStartTime` - The time when the first epoch begins.
-* `currentEpoch` - Keeps track of the current epoch. It is incremented every time `allocateRewards()` is called inside the triggered `checkEpoch()` modifier
+* `currentEpoch` - Keeps track of the current epoch. It is incremented every time `allocateRewards()` is called inside the triggered `checkEpoch()` modifier once per epoch
 
 Token Ratios
 * `uint256 public expectedRatioOne`, `uint256 public expectedRatioTwo` - Target price ratios for the token pairs that must be met for rewards to be distributed.
@@ -22,14 +26,15 @@ Token Ratios
 * `uint256 public previousEpochRatioOnePrice`, `uint256 public previousEpochRatioTwo` - Prices of the main token in the first and second pairs at the end of the previous epoch
 
 Reward Distribution
+All these states are modifiable by functions
 * `uint256 public tokensPerEpoch` - Number of reward tokens distributed per epoch
-* `uint256 public daoFundSharedPercent, `uint256 public devFundSharedPercent` - Percentages of the rewards allocated to the DAO and DEV funds
+* `uint256 public daoFundSharedPercent`, `uint256 public devFundSharedPercent` - Percentages of the rewards allocated to the DAO and DEV funds
 * `address public daoFund`, `address public devFund` - Addresses of DAO and DEV funds
 * `IERC20 public rewardToken` - The ERC20 token distributed as the reward
 * `bool public rewardsPaused` - Is printing rewards paused, regardless of ratios, `allocateRewards()` won't work unless it is set to `FALSE`
 
 Masonry
-* `address public masonry` - Address of Masonry, later will be casted into `IModernMasonry` to use it's `allocateRewards()` function
+* `address public masonry` - Address of Masonry, later will be cast into `IModernMasonry` to use it's `allocateRewards()` function
 
 * `uint32 public secondsAgoTwap = 60 * 7` - holds a value representing how far back in time the Time-Weighted Average Price (TWAP) should be calculated. However, in the provided contract code, secondsAgoTwap is declared but not used anywhere
 
